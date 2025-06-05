@@ -1,0 +1,9 @@
+<h2>الدفع للدورة: {{ course.title }}</h2>
+<form method="POST">
+  <input name="user_name" placeholder="Your Name"><br>
+  <select name="method">
+    <option value="mada">Mada</option>
+    <option value="stc">STC Pay</option>
+  </select><br>
+  <button type="submit">Pay ${{ course.price }}</button>
+</form>
